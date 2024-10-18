@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="./output.css" rel="stylesheet">
+  <title>Frontend Mentor | Recipe page</title>
+  <style>
+    h2 {
+      color: hsl(14, 45%, 36%);
+      font-family: 'YoungSerif';
+      font-size: 1.6rem;
+    }
+
+    p {
+      color: hsl(24, 5%, 18%);
+    }
+
+    span {
+      font-weight: 700;
+      color: hsl(30, 10%, 34%);
+    }
+
+    /* ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    ol {
+      list-style-type: decimal;
+      padding-left: 1.5rem;
+    } */
+    li::marker {
+      color: #854632;
+    }
+
+    .bg-rose-50 li::marker {
+      color: hsl(332, 51%, 32%);
+      font-size: 0.7rem;
+    }
+  </style>
+</head>
+
+<body class="bg-orange-100 flex justify-center xl:pt-[100px] xl:pb-[100px]">
+  <div class="bg-white flex flex-col xl:w-[1000px] xl:p-[30px] xl:rounded-xl">
+    <img src="../assets/images/image-omelette.jpeg" alt="Omelette" class="xl:rounded-2xl">
+    <div class="p-[25px] flex flex-col gap-[15px] xl:p-[0px] xl:pt-6">
+      <h1 class="text-[2rem] font-YoungSerif">Simple Omelette Recipe</h1>
+      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      <div class="bg-rose-50 flex justify-between flex-col p-[10px] rounded-[15px]">
+        <h3 class="text-rose-800 font-bold p-[10px]">Preparation time</h3>
+        <ul class="list-disc list-outside leading-8 w-[80%] self-center md:w-[90%]">
+          <li class="pl-4"><span>Total:</span> Approximately 10 minutes</li>
+          <li class="pl-4"><span>Preparation:</span> 5 minutes</li>
+          <li class="pl-4"><span>Cooking:</span> 5 minutes</li>
+        </ul>
+      </div>
+      <h2>Ingredients</h2>
+      <ul class="list-disc list-outside leading-7 pl-4">
+        <li class="marker:text-[0.6rem] pl-4">2-3 large eggs</li>
+        <li class="marker:text-[0.6rem] pl-4">Salt, to taste</li>
+        <li class="marker:text-[0.6rem] pl-4">Pepper, to taste</li>
+        <li class="marker:text-[0.6rem] pl-4">1 tablespoon of butter or oil</li>
+        <li class="marker:text-[0.6rem] pl-4">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+      <hr>
+      <h2>Instructions</h2>
+      <ol class="list-decimal pl-5">
+        <li class="marker:font-bold pl-4 pb-2"><span>Beat the eggs</span>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well
+          mixed.
+          You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li class="marker:font-bold pl-4 pb-2"><span>Heat the pan</span>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li class="marker:font-bold pl-4 pb-2"><span>Cook the omelette</span>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to
+          ensure
+          the eggs evenly coat the surface.</li>
+        <li class="marker:font-bold pl-4 pb-2"><span>Add fillings (optional)</span>: When the eggs begin to set at the edges but are still slightly runny
+          in the
+          middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li class="marker:font-bold pl-4 pb-2"><span>Fold and serve</span>: As the omelette continues to cook, carefully lift one edge and fold it over the
+          fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        <li class="marker:font-bold pl-4 pb-2"><span>Enjoy</span>: Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+      <h2>Nutrition</h2>
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+      <div class="grid grid-cols-2">
+        <p class="p-3 border-b-[1px] border-stone-150 pl-8 text-slate-600">Calories</p>
+        <p class="p-3 border-b-[1px] border-stone-150 text-[#854632] font-bold">277kcal</p>
+        <p class="p-3 border-b-[1px] border-stone-150 pl-8 text-slate-600">Carbs</p>
+        <p class="p-3 border-b-[1px] border-stone-150 text-[#854632] font-bold">0g</p>
+        <p class="p-3 border-b-[1px] border-stone-150 pl-8 text-slate-600">Protein</p>
+        <p class="p-3 border-b-[1px] border-stone-150 text-[#854632] font-bold">20g</p>
+        <p class="p-3 pl-8 text-slate-600">Fat</p>
+        <p class="p-3 text-[#854632] font-bold">22g</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
